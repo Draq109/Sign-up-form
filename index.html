@@ -15,40 +15,37 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <a class="navbar-title" href="#">Ether Wallet</a>
-    </header>
     <form action="GET">
         <div class="form-container">
             <h1>Make an Account</h1>
             <div class="form-row">
                 <div class="label-input">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
                 </div>
                 <div class="label-input">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Last Name">
+                    <input type="text" id="first-name" name="first-name" placeholder="Last Name" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="label-input">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
                 </div>
                 <div class="label-input">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="label-input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" placeholder="Minimum 8 characters">
+                    <input type="text" name="password" id="password" placeholder="Minimum 8 characters" required>
                 </div>
                 <div class="label-input">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="text" name="confirm-password" id="confirm-password" placeholder="Confirm">
+                    <input type="text" name="confirm-password" id="confirm-password" placeholder="Confirm" required>
                 </div>
             </div>
             <div class="form-row">
@@ -61,11 +58,11 @@
                 <input type="checkbox" id="terms" name="terms" value="terms">
                 <p class="terms-conditions">
                     I certify that I am 18 years of age or older, I agree to
-                    the User Agreement, and I have read the Privacy Policy.
+                    the <a href="#">User Agreement</a>, and I have read the <a href="#">Privacy Policy</a>.
                 </p>
             </div>
         </div>
-        <button>Create Account</button>
+        <button type="submit" class="create btn">Create Account</button>
     </form>
 </body>
 

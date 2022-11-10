@@ -1,37 +1,93 @@
+@font-face {
+  font-family: Inter;
+  src: url(./Fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./Fonts/Inter-Medium.ttf);
+  font-weight: 700;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  a:link {
-    color: black;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: black;
-    text-decoration: none;
-  }
-  
-  body {
-    background-color: #EAEDF0;
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.3;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+a:link {
+  color: black;
+  text-decoration: none;
+}
 
-  .form-row label[for="first-name"],
-  .form-row label[for="last-name"] {
-    
-  }
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181a1b;
+}
+h1 {
+  align-self: flex-start;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 1.5rem;
+  border-radius: .6rem;
+  border: .07rem solid rgb(85, 85, 85);
+
+}
+
+.form-row {
+  margin: .7rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .35rem;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: .7rem;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, .8);
+  letter-spacing: .02rem;
+}
+
+.label-input input[type="text"],
+.label-input input[type="email"] {
+  font-family: Inter, sans-serif;
+  font-size: .85rem;
+  padding: 1rem;
+  color: white;
+  border-radius: .3rem;
+  background-color: #181a1b;
+  border: .03rem solid rgb(85, 85, 85);
+  height: 2.5rem;
+  width: 12rem;
+}
+
+
+.form-row input[name="BTC-address"] {
+  width: 18rem;
+}
+.terms-conditions {
+  color: white;
+  width: 20rem;
+  font-size: .82rem;
+}
